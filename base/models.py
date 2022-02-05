@@ -20,6 +20,7 @@ class Room(models.Model):
     class Meta:
         ordering = ['-updated', '-created']
 
+   
     def __str__(self):
         return self.name
     
@@ -30,6 +31,10 @@ class Message(models.Model):
     updated = models.DateTimeField(auto_now=True) # Every time is created this will be set whit the date now
     created = models.DateTimeField(auto_now_add=True) # The first time is called set the time of that
     
+    class Meta:
+        ordering = ['-updated', '-created']
+
+  
     def __str__(self):
         return self.body[0:50] # Preview of the message
 
