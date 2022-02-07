@@ -4,7 +4,7 @@ This app joins with other repos in my learning of Django, the app still needs to
 
 # Requirements
 
-Basic python knowledge and the pip requirements for this proyect:
+Basic python knowledge and the pip requirements for this project:
 ```
 pip install -r requirements.txt
 ```
@@ -37,6 +37,12 @@ for (let i = 0; rooms.length > i; i++) {
 # How it works
 
 The app is designed for create, update and delete Rooms for chat whit other users, you can create and udpate your own user and manage your messages. In a few words you can use the database in CRUD methodology. You can host this app with some ways read about that... NOTE: When  you run the server create a [admin](https://www.geeksforgeeks.org/how-to-create-superuser-in-django/) user for manage the admin panel. 
+
+# Preview
+
+<img src="https://github.com/regalk13/chat-app-django/blob/main/screenshots/sc1.png?raw=true">
+<img src="https://github.com/regalk13/chat-app-django/blob/main/screenshots/sc3.png?raw=true">
+
 
 # Contributing
 
