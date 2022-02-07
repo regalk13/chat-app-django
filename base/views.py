@@ -109,7 +109,6 @@ def createRoom(request):
     if request.method == 'POST':
         topic_name = request.POST.get('topic')
         topic, created = Topic.objects.get_or_create(name=topic_name) 
- 
 
         Room.objects.create(
             host=request.user,

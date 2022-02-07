@@ -79,11 +79,6 @@
               <span>@{{room.host.username}}</span>
             </a>
           </div>
-          <div class="room__details">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, tenetur laudantium? Dicta repellendus
-            rerum consectetur, voluptatem repudiandae eum ea porro cupiditate provident nulla, deserunt, ab ipsum
-            corporis laboriosam deleniti molestias?
-          </div>
           <span class="room__topics">JavaScript</span>
         </div>
         <div class="room__conversation">
@@ -126,11 +121,12 @@
 
       </div>
       <div class="room__message">
+        {% if request.user.is_authenticated %}
         <form action="" method="POST">
           {% csrf_token %}
           <input name="body" placeholder="Write your message here..." />
         </form>
-
+        {% endif %}
       </div>
     </div>
     <!-- Room End -->
